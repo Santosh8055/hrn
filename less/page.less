@@ -1,0 +1,732 @@
+@green-lt: #99cc00;
+.hrn-heading {
+    background: #000000;
+    z-index: 2;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    table {
+        width: 100%;
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+.hrn-heading-overflow-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    margin-top: 73px;
+    background: black;
+    color: white;
+    overflow: auto;
+    z-index: 100;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 30px;
+        li {
+            text-align: center;
+            padding: 10px 0px;
+        }
+    }
+}
+
+.hrn-key-note-left,
+.hrn-key-note-right {
+    position: absolute;
+    font-family: sans-serif;
+    .hrn-keynote-name {
+        font-weight: bold;
+    }
+}
+
+.hrn-unleash-break {
+    display: none;
+}
+
+#hrn-heading-more-menu:hover .hrn-overflow-menu-items {
+    display: block;
+}
+
+.hrn-overflow-menu-items {
+    display: none;
+    position: absolute;
+    left: -50px;
+    width: 210px;
+    padding: 0;
+    padding-top: 30px;
+    text-align: center;
+    color: black;
+    background: transparent;
+    &>span {
+        display: block;
+        border-top: 4px solid rgba(10, 9, 9, 0.25);
+        top: 17px;
+        background: white;
+        padding: 20px 0px;
+        &>span {
+            display: block;
+            text-align: left;
+            padding: 10px;
+        }
+        &>span:hover {
+            color: white;
+            background: @green-lt;
+        }
+    }
+}
+
+.hrn-body {
+    .hrn-body-one {
+        height: 49vw;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        position: relative;
+        color: #fff;
+        background: url(../img/header-bg-desktop.jpg) center top no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        h1 {
+            position: absolute;
+            text-align: left;
+            left: 41%;
+            top: 24%;
+            color: #fff;
+            text-shadow: 0 0 8px #000;
+            span {
+                font-family: "Playfair Display", serif;
+                display: block;
+                font-size: 2.083333vw;
+                font-weight: 400;
+            }
+            span:nth-child(2) {
+                position: relative;
+                font-size: 5.9375vw;
+                left: -15%;
+                top: -1.5vw;
+                display: block;
+            }
+            span:nth-child(3) {
+                position: relative;
+                top: -3vw;
+            }
+        }
+        .hrn-unleash-and-sponsers {
+            position: absolute;
+            width: 100%;
+            font-family: 'proxima-nova', sans-serif;
+            text-transform: uppercase;
+            .hrn-unleash {
+                color: #fff;
+                font-weight: 900;
+            }
+            #hrn-success-mobile {
+                display: none;
+            }
+            .hrn-buttons {
+                height: 40px;
+                font-size: 14px;
+                padding-top: 10px;
+                .button {
+                    cursor: pointer;
+                    padding: 10px 55px;
+                    &.hrn-request-agenda {
+                        color: @green-lt;
+                        background: white;
+                    }
+                    &.hrn-request-agenda:hover {
+                        background: @green-lt;
+                        color: white;
+                    }
+                    &.hrn-get-tickets {
+                        background: @green-lt;
+                        color: white;
+                    }
+                    &.hrn-get-tickets:hover {
+                        color: @green-lt;
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+    .hrn-body-two {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        .hrn-icons {
+            display: none;
+        }
+        .hrn-agenda {
+            position: relative;
+            text-align: center;
+            .hrn-agenda-container {
+                width: 100%;
+                max-width: 760px;
+                margin: 0 auto;
+                .hrn-agenda-title {
+                    text-transform: uppercase;
+                    margin-top: 35px;
+                    margin-bottom: 18px;
+                    color: @green-lt;
+                    font-family: 'proxima-nova', sans-serif;
+                    font-weight: 900;
+                    font-size: 30px;
+                }
+                .hrn-agenda-description {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 192%;
+                }
+                .hrn-agenda-button {
+                    text-transform: uppercase;
+                    background: #99cc00;
+                    color: white;
+                    width: 200px;
+                    height: 40px;
+                    line-height: 40px;
+                    display: inline-block;
+                    border: 1px solid #99cc00;
+                    margin-top: 2vw;
+                    margin-left: 2vw;
+                    margin-bottom: 1vw;
+                    cursor: pointer;
+                }
+                .hrn-agenda-button:hover {
+                    color: @green-lt;
+                    background: white;
+                }
+            }
+        }
+    }
+    .hrn-body-three {
+        background: url(../img/mobile/desktop-bg.jpg) top no-repeat;
+        background-size: cover;
+        .hrn-body-mobile-container {
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+            align-items: center;
+            .hrn-mobile-panel {
+                width: 40%;
+                margin: 0 auto;
+                h2 {
+                    font-size: 30px;
+                    letter-spacing: -1px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                }
+                p {
+                    line-height: 192%;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+                .hrn-mobile-button {
+                    display: inline-block;
+                    padding: 10px 30px;
+                    text-transform: uppercase;
+                    background: white;
+                    border: 1px solid white;
+                    transition: all 0.3s;
+                    margin-top: 3vw;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                .hrn-mobile-button:hover {
+                    color: white;
+                    background: transparent;
+                }
+                .hrn-play-store {
+                    img {
+                        width: 135px;
+                        height: 40px;
+                        margin: 0 15px;
+                    }
+                }
+            }
+            .hrn-mobile-panel:nth-child(2) {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .hrn-body {
+        .hrn-body-one {
+            .hrn-key-note-left {
+                bottom: 1vw;
+                left: 3vw;
+            }
+            .hrn-key-note-right {
+                bottom: 1vw;
+                right: 3vw;
+            }
+            .hrn-keynote-title {
+                font-size: 1.25vw;
+            }
+            .hrn-keynote-name {
+                font-size: 1.770833vw;
+            }
+            .hrn-unleash-and-sponsers {
+                bottom: 5vw;
+                left: 0;
+                .hrn-unleash {
+                    font-size: 32.2px;
+                }
+                .hrn-buttons {
+                    height: 40px;
+                    font-size: 14px;
+                    .button {
+                        cursor: pointer;
+                        &.hrn-request-agenda {
+                            margin-right: 50px;
+                        }
+                    }
+                }
+                .hrn-sponsers {
+                    position: relative;
+                    top: 4vw;
+                    img {
+                        width: 5.495781vw;
+                        height: 1.947708vw;
+                        margin-right: 2vw;
+                        &#hrn-success-other {
+                            width: 14vw;
+                        }
+                    }
+                }
+            }
+        }
+        .hrn-body-two {
+            .hrn-icons {
+                display: block;
+                width: 100%;
+                text-align: center;
+                position: relative;
+                .hrn-icon {
+                    height: 60px;
+                    width: 60px;
+                    margin: 0 auto;
+                    transition: all .2s ease-in-out;
+                    display: inline-block;
+                    position: relative;
+                    .home {
+                        color: #9c0;
+                    }
+                    .mainstage {
+                        color: #18a7e0;
+                    }
+                    .hrtech {
+                        color: #bb6e3d;
+                    }
+                    .irecruitandtalent {
+                        color: #57b1b8;
+                    }
+                    .smartdata {
+                        color: #8a5ea4;
+                    }
+                    .learning {
+                        color: #00a29a;
+                    }
+                    .adoption {
+                        color: #81b041;
+                    }
+                    .hrssandpayroll {
+                        color: #809453;
+                    }
+                    .payandrewards {
+                        color: #a92a31;
+                    }
+                    .digitalhr {
+                        color: #ee2a7b;
+                    }
+                    .diversityandinclusion {
+                        color: #3b8954;
+                    }
+                    .thinktank {
+                        color: #3b8954;
+                    }
+                    .thinktanktwo {
+                        color: #3f80c2;
+                    }
+                    .disrupthr {
+                        color: #cca82e;
+                    }
+                    .productdemo {
+                        color: #e41a52;
+                    }
+                    .icon {
+                        height: 30px;
+                        width: 30px;
+                        margin: 0 auto;
+                        position: relative;
+                        top: 25%;
+                        transition: all .3s;
+                    }
+                    .hrn-icon-tooltip {
+                        display: none;
+                        position: absolute;
+                        top: -50px;
+                        left: -65px;
+                        background: rgba(2, 0, 0, 0.05);
+                        width: 200px;
+                        padding: 10px 0;
+                        font-size: 12px;
+                    }
+                    .hrn-icon-tooltip:after {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 48%;
+                        margin: 0 0 0 -15px;
+                        width: 30px;
+                        height: 20px;
+                        background: url(../img/logos/arrow.svg) no-repeat center center;
+                        background-size: 100%;
+                    }
+                    .hrn-icon-home {
+                        background: url(../img/logos/grey/home.svg) center no-repeat;
+                    }
+                    .hrn-icon-mainstage {
+                        background: url(../img/logos/grey/mainstage.svg) center no-repeat;
+                    }
+                    .hrn-icon-hrtech {
+                        background: url(../img/logos/grey/hrtech.svg) center no-repeat;
+                    }
+                    .hrn-icon-irecruitandtalent {
+                        background: url(../img/logos/grey/irecruitandtalent.svg) center no-repeat;
+                    }
+                    .hrn-icon-smartdata {
+                        background: url(../img/logos/grey/smartdata.svg) center no-repeat;
+                    }
+                    .hrn-icon-learning {
+                        background: url(../img/logos/grey/learning.svg) center no-repeat;
+                    }
+                    .hrn-icon-adoption {
+                        background: url(../img/logos/grey/adoption.svg) center no-repeat;
+                    }
+                    .hrn-icon-hrssandpayroll {
+                        background: url(../img/logos/grey/hrssandpayroll.svg) center no-repeat;
+                    }
+                    .hrn-icon-payandrewards {
+                        background: url(../img/logos/grey/payandrewards.svg) center no-repeat;
+                    }
+                    .hrn-icon-digitalhr {
+                        background: url(../img/logos/grey/digitalhr.svg) center no-repeat;
+                    }
+                    .hrn-icon-diversityandinclusion {
+                        background: url(../img/logos/grey/diversityandinclusion.svg) center no-repeat;
+                    }
+                    .hrn-icon-thinktank {
+                        background: url(../img/logos/grey/thinktank.svg) center no-repeat;
+                    }
+                    .hrn-icon-thinktanktwo {
+                        background: url(../img/logos/grey/thinktanktwo.svg) center no-repeat;
+                    }
+                    .hrn-icon-disrupthr {
+                        background: url(../img/logos/grey/disrupthr.svg) center no-repeat;
+                    }
+                    .hrn-icon-productdemo {
+                        background: url(../img/logos/grey/productdemo.svg) center no-repeat;
+                    }
+                }
+                .hrn-icon:hover, .hrn-icon.active {
+                    .icon {
+                        transform: scale(1.5);
+                    }
+                    .hrn-icon-tooltip {
+                        display: inline-block;
+                    }
+                    .hrn-icon-home {
+                        background: url(../img/logos/color/home.svg) center no-repeat;
+                    }
+                    .hrn-icon-mainstage {
+                        background: url(../img/logos/color/mainstage.svg) center no-repeat;
+                    }
+                    .hrn-icon-hrtech {
+                        background: url(../img/logos/color/hrtech.svg) center no-repeat;
+                    }
+                    .hrn-icon-irecruitandtalent {
+                        background: url(../img/logos/color/irecruitandtalent.svg) center no-repeat;
+                    }
+                    .hrn-icon-smartdata {
+                        background: url(../img/logos/color/smartdata.svg) center no-repeat;
+                    }
+                    .hrn-icon-hrtech {
+                        background: url(../img/logos/color/hrtech.svg) center no-repeat;
+                    }
+                    .hrn-icon-learning {
+                        background: url(../img/logos/color/learning.svg) center no-repeat;
+                    }
+                    .hrn-icon-adoption {
+                        background: url(../img/logos/color/adoption.svg) center no-repeat;
+                    }
+                    .hrn-icon-hrssandpayroll {
+                        background: url(../img/logos/color/hrssandpayroll.svg) center no-repeat;
+                    }
+                    .hrn-icon-diversityandinclusion {
+                        background: url(../img/logos/color/diversityandinclusion.svg) center no-repeat;
+                    }
+                    .hrn-icon-digitalhr {
+                        background: url(../img/logos/color/digitalhr.svg) center no-repeat;
+                    }
+                    .hrn-icon-hrssandpayroll {
+                        background: url(../img/logos/color/hrssandpayroll.svg) center no-repeat;
+                    }
+                    .hrn-icon-thinktank {
+                        background: url(../img/logos/color/thinktank.svg) center no-repeat;
+                    }
+                    .hrn-icon-thinktanktwo {
+                        background: url(../img/logos/color/thinktanktwo.svg) center no-repeat;
+                    }
+                    .hrn-icon-disrupthr {
+                        background: url(../img/logos/color/disrupthr.svg) center no-repeat;
+                    }
+                    .hrn-icon-productdemo {
+                        background: url(../img/logos/color/productdemo.svg) center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 641px) {
+    .hrn-body {
+        .hrn-body-one {
+            height: 80.100000vw;
+            background: url(../img/header-bg-tablet.jpg) center top no-repeat;
+            background-size: cover;
+            .hrn-key-note-left {
+                top: 15%;
+                left: 5%;
+            }
+            .hrn-key-note-right {
+                top: 15%;
+                right: 5%;
+            }
+            .hrn-keynote-title {
+                font-size: 1.562500vw;
+            }
+            .hrn-keynote-name {
+                font-size: 2.083333vw;
+            }
+            .hrn-unleash-and-sponsers {
+                bottom: 15vw;
+                left: 0;
+                left: 0;
+                .hrn-unleash {
+                    font-size: 4.3vw;
+                    .hrn-unleash-break {
+                        display: block;
+                    }
+                }
+                .hrn-sponsers {
+                    position: relative;
+                    top: 10vw;
+                    img {
+                        margin-right: 0vw;
+                        width: 26.80885417vw;
+                        height: 3.183203125vw;
+                        &#hrn-success-other {
+                            width: 43vw;
+                            height: 4.5vw;
+                        }
+                    }
+                }
+            }
+        }
+        .hrn-body-two {
+            .hrn-agenda-title {
+                font-size: 22px;
+            }
+        }
+        .hrn-body-three {
+            .hrn-body-mobile-container {
+                display: block;
+                .hrn-mobile-panel {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .hrn-body {
+        .hrn-body-one {
+            height: 221.344vw;
+            background: url(../img/header-bg-mobile.jpg) center top no-repeat;
+            background-size: cover;
+            h1 {
+                left: 33.5%;
+                top: 10%;
+                span:nth-child(1) {
+                    font-size: 4.062500vw;
+                    display: block;
+                }
+                span:nth-child(2) {
+                    font-size: 11.250000vw;
+                    display: block;
+                    top: -2vw;
+                }
+                span:nth-child(3) {
+                    font-size: 4.062500vw;
+                    top: -4vw;
+                    display: block;
+                }
+            }
+            .hrn-key-note-left {
+                top: 42%;
+                left: 5%;
+            }
+            .hrn-key-note-right {
+                top: 42%;
+                right: 5%;
+            }
+            .hrn-keynote-title {
+                font-size: 3.750000vw;
+            }
+            .hrn-keynote-name {
+                font-size: 4.2vw;
+            }
+            .hrn-unleash-and-sponsers {
+                top: 100vw;
+                .hrn-unleash {
+                    font-size: 6.875vw;
+                    margin-bottom: 7.563vw;
+                }
+                .hrn-sponsers {
+                    position: relative;
+                    top: 20vw;
+                    img {
+                        margin-right: 10vw;
+                        width: 26.125vw;
+                        height: 9.25875vw;
+                        margin-top: 11vw;
+                        &#hrn-success-mobile {
+                            display: inline-block;
+                        }
+                        &#hrn-success-other {
+                            display: none;
+                        }
+                    }
+                }
+                .hrn-buttons {
+                    padding-top: 0;
+                    .button {
+                        display: table;
+                        margin: 2vw auto;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        .hrn-body-two {
+            .hrn-agenda {
+                .hrn-agenda-container {
+                    .hrn-agenda-title {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        .hrn-body-three {
+            .hrn-body-mobile-container {
+                display: block;
+                .hrn-mobile-panel {
+                    width: 90%;
+                    margin-top: 5vw;
+                }
+                .hrn-mobile-panel:nth-child(2) {
+                    img {
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1274px) {
+    .hrn-heading-overflow-list {
+        visibility: hidden;
+        text-transform: uppercase;
+    }
+    .hrn-heading-menu {
+        display: none;
+    }
+    .hrn-heading-overflow {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        cursor: pointer;
+        div {
+            width: 35px;
+            height: 5px;
+            background: white;
+            margin: 6px 0;
+        }
+    }
+    .change {
+        -webkit-transition-delay: 1s;
+        /* Safari */
+        transition-delay: 1s;
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        .bar2 {
+            opacity: 0;
+        }
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    }
+}
+
+@media screen and (min-width: 1275px) {
+    .hrn-heading-overflow-list {
+        visibility: hidden !important;
+    }
+    .hrn-heading {
+        .hrn-heading-menu {
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+        .hrn-heading-button {
+            padding: 0 5px;
+            cursor: pointer;
+            &:hover {
+                color: @green-lt;
+                position: relative;
+            }
+        }
+        .hrn-heading-tickets {
+            cursor: pointer;
+            padding: 10px 30px;
+            border: 1px solid @green-lt;
+            background-color: @green-lt;
+            color: #fff;
+        }
+    }
+    .hrn-heading-overflow {
+        display: none;
+    }
+}
